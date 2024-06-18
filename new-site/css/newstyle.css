@@ -47,10 +47,11 @@ article p {
     text-align: justify; 
     display: flex;
     flex-direction: column;
+
 } 
 
 main { 
-    flex: 2; 
+    flex: 4; 
 } 
 
 article { 
@@ -73,6 +74,8 @@ footer {
     position: fixed; 
     bottom: 0; 
     width: 100%; 
+    padding: 10 10;
+    margin: 20 20 ;
 } 
 
 #highlight { 
@@ -99,4 +102,24 @@ footer {
 .news-bar{
     background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
     background-size: contain
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    height: 100px;
+    justify-content: space-around;
+    color: #a2a8d3;
+}
+.pagination a{
+    color:#113f67;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    height: fit-content;
+}
+.ad{
+    display: flex;
+    flex-direction: row;
 }
