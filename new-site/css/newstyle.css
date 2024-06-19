@@ -221,3 +221,10 @@ footer {
     flex-direction: row-reverse;
     align-content: flex-end;
  }
+
+ /* Separate main feed from highlighted article */
+    .begin-feed{
+        display: inline-block;
+        height: 60px;
+        background-color: antiquewhite;
+    }
