@@ -25,17 +25,17 @@
 <body>
   
   <body> 
+    <!-- HEADER -->
     <header> 
-        <h1>ILNationale</h1> 
-        <h5> 
-            Your daily source of news
-        </h5>
-
+        <h1 id="page-title">ILNationale</h1> 
     </header> 
+    <!-- IMAGE UNDER TITLE -->
     <div class="news-bar" style="display: flex; height: 150px; background-color: blanchedalmond;">
       <img src="https://via.placeholder.com/150" alt="Placeholder Image" style="display:none;">
 
     </div>
+
+    <!-- NAVIGATION BAR -->
     <nav> 
         <a href="#">Home</a> 
         <a href="#">Filter</a> 
@@ -45,6 +45,9 @@
         <a href="#">Contact</a>
     </nav> 
   
+<!-- MAIN CONTENT -->
+
+    <!-- HIGHLIGHTED ARTICLE -->
     <div class="container"> 
       <article id="highlight"> 
         <h2>This is the highlighted article [Front News]</h2> 
@@ -76,6 +79,53 @@
             the tag that define the structure of web pages. 
         </p> 
     </article> 
+
+    <!-- SCROLLABLE EXAMPLE -->
+    <div class="scrollable-wrapper">
+      <div class="card">    
+        <article class="card-scroll"> 
+          <div class="post-tag">
+            <a href="#">World</a>
+          </div>
+            <h2>PHOTO. Hippodrome, crucial hours: tomorrow the inspection to unlock the summer season</h2> 
+            <p class="post-meta"> 
+                Published on December 10, 2023
+            </p> 
+            <p> 
+              As the restoration and adaptation of the structure continues, in the next few hours the authorization could arrive which will allow to start the races in July
+            </p> 
+        </article>
+      </div>
+   
+      <div class="card">
+        <article class="card-scroll"> 
+          <div class="post-tag">
+            <a href="#">World</a>
+          </div>
+            <h2>PHOTO. Hippodrome, crucial hours: tomorrow the inspection to unlock the summer season</h2> 
+            <p class="post-meta"> 
+                Published on December 10, 2023
+            </p> 
+            <p> 
+              As the restoration and adaptation of the structure continues, in the next few hours the authorization could arrive which will allow to start the races in July
+            </p> 
+        </article>
+      </div>
+      <div class="card"> <article class="card-scroll"> 
+        <div class="post-tag">
+          <a href="#">World</a>
+        </div>
+          <h2>PHOTO. Hippodrome, crucial hours: tomorrow the inspection to unlock the summer season</h2> 
+          <p class="post-meta"> 
+              Published on December 10, 2023
+          </p> 
+          <p> 
+            As the restoration and adaptation of the structure continues, in the next few hours the authorization could arrive which will allow to start the races in July
+          </p> 
+      </article></div>
+        
+    </div>
+    <!-- BEGIN FEED  -->
         <main> 
   
             <article> 
@@ -132,8 +182,10 @@
             </div>
 
         </main> 
-
+       <!-- GREY SIDEBAR-->
         <aside> 
+
+
             <h2>Subscription</h2> 
             <p> 
                 Subscribe to our newsletter to get the latest news 
@@ -146,7 +198,7 @@
     
   
     <footer> 
-        <p>© 2023 Your Blog Name. All rights reserved.</p> 
+        <p class="text move-horizontal">© 2024 Add some text here, maybe some news headlines? make them clickable ?href links?</p> 
     </footer> 
 </body> 
   <script src="js/app.js"></script>

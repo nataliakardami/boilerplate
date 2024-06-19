@@ -7,14 +7,21 @@ body {
 
 header { 
     background-color: #f1f1f1;
-    padding: 30px;
-    text-align: center;
+    height: 300px;
     font-size: 30px;
     background: linear-gradient(0deg, #a2a8d3 0%, #113f67b3 90%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
 
 } 
 h1{
     color: #f1f1f1;
+
+    text-align: center;
+    font-size: 90px;
+    margin: 10px;
 
 }
 
@@ -123,3 +130,56 @@ footer {
     display: flex;
     flex-direction: row;
 }
+
+.text{
+    animation-duration: 10s;
+    animation-iteration-count: 3;
+    animation-timing-function: linear;
+}
+.move-horizontal {
+    animation-name: move-horizontal;
+  }
+  
+  @keyframes move-horizontal {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+
+  /* ADD HORIZONTAL SCROLLABLE NEWS FEED */
+  .scrollable-wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 10px 0px;
+   
+   
+
+   
+  }
+  .card{
+    flex: 0 0 auto;
+    margin: 10px;
+    background-color: #f1f1f1;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow-x: auto;
+    margin-left: 0;
+    margin-right: 20px;
+    padding: 10px;
+
+    
+  }
+  .card-scroll{
+    border:0px;
+    position: relative;
+    margin: 0 0;
+    padding: 15px 15px;
+    width: 500px;
+    height: 300px;
+    overflow-x: auto;
+    border-radius: inherit;
+  }
