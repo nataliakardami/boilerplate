@@ -199,8 +199,16 @@ footer {
   }
   .article-preview{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-content: space-around;
     align-content: center;
     align-items: center;
   }
+  .scrollable-wrapper::-webkit-scrollbar {
+    display: none;
+
+  }
+ .scrollable-wrapper .article-preview {
+    flex-direction: row-reverse;
+    align-content: flex-end;
+ }
